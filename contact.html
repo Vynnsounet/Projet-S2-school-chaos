@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MYLT PRODUCTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="cssfile/testo.css">
+
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+          <a href="#home" class="w3-bar-item w3-button w3-wide">Made by MYLT</a>
+          <!-- Right-sided navbar links -->
+          <div class="w3-right w3-hide-small">
+            <a href="accueil.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="mylt.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+            <a href="rapport.html" class="w3-bar-item w3-button"><i class="fa fa-file"></i> WORK</a>
+          </div>
+          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="accueil.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="mylt.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      </nav>
+
+      <!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Follow us on social media :</p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Rennes, France</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-instagram fa-fw w3-xxlarge w3-margin-right"> </i> Insta : </p>
+      <p> <img src="image/tiktok.jpg" width="45" height="45"> &nbsp &nbsp TikTok : </p>
+      <p><i class="fa fa-twitter fa-fw w3-xxlarge w3-margin-right"> </i> Twitter : </p>
+
+      <br>
+      
+      <!-- Image of location/map -->
+      <img src="image/rennes.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    </div>
+  </div>
+
+
+</body>

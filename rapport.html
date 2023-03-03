@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MYLT PRODUCTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="cssfile/testo.css">
+
+</head>
+
+<body>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+          <a href="#home" class="w3-bar-item w3-button w3-wide">Made by MYLT</a>
+          <!-- Right-sided navbar links -->
+          <div class="w3-right w3-hide-small">
+            <a href="accueil.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="mylt.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+            <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+          </div>
+          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="accueil.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="mylt.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      </nav>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3> Notre dure labeur : </h3>
+        <p>Mettre des débuts d'image de notre jeu ici et faire un rapport sur notre progression.
+            <br> J'avais envie de mettre une photo de chat jugez pas, c'est trop pipou.
+        </p>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Lien pour jsp quoi</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="image/choucroute.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-center w3-light-grey" style="padding:128px 16px" id="pricing">
+    <h3>Réseau</h3>
+    <p>
+        Dans notre section réseau, pour ce qui est du réseau multijoueur local,
+        une option d’écran scindé sera implémentée dans notre jeu, 
+        les joueurs pourront donc jouer à plusieurs sur un même écran et ainsi suivre leur propre
+        gameplay de façon séparé et pratique.
+        Il y aura également, un système de peer to peer (pair-à-pair ou encore P2P),
+        c’est à dire que les joueurs pourront jouer sur différents ordinateurs dans la
+        même salle et donc sur un réseau local.
+        Pour ce qui est du réseau en ligne, un serveur sera mis en place, de façon
+        à ce que les joueurs puissent jouer et être synchronisés alors qu’ils ne sont
+        pas dans la même pièce</p>
+    <br><br>
+    <h3>Intelligence artificielle</h3>
+    <p>
+        L’intelligence artificielle se manifestera dans notre jeu à travers les adver-
+        saires dans les mini-jeu. Ce seront des personnages non-joueurs (PNJ), c’est
+        à dire, des personnages contrôlé par l’ordinateur, qui sont gérés par l’intelligence artificielle, 
+        et dont les actions sont généralement préprogrammées.
+        Concrètement, pour la course de tricycle par exemple, l’intelligence artificielle aura, 
+        ou auront pour objectif de gagner cette course. Les ordinateurs
+        seront donc capables de gérer plusieurs types de situations en fonction des
+        actions du joueur.
+        De plus, ces ordis auront différents niveaux de difficulté, allant de facile à
+        difficile.
+    </p>
+  </div>
+  <!-- Team Section -->
+  <div class="w3-container w3-white" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3> Découpage du projet : </h3>
+        <p> </p>
+        <img class="w3-image w3-round-large" src="image/taches.png" alt="Buildings" width="500" height="290">
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="image/planning.png" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+  
+  <!-- Skills Section -->
+  <div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>template possiblement intéressante à voir</h3>
+        <p>je laisse juste ça là faite pas attention</p>
+      </div>
+      <div class="w3-col m6">
+        <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <div class="w3-row-padding w3-center w3-white" style="margin-top:64px">
+    <h3> Ressources utilisés : 
+    </h3>
+    <br>
+    <div class="w3-quarter">
+      <img src="image/unity.jpg" width="80" height="80"> 
+      <p class="w3-large"> <a href=" https://unity.com"> Unity </a></p>
+      <p>Moteur de jeu</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="image/rider.jpg" width="80" height="80"> 
+      <p class="w3-large"><a href=" https://www.jetbrains.com/rider"> Rider </a></p>
+      <p>IDE</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="image/blinder.png" width="80" height="80"> 
+      <p class="w3-large"><a href="https://www.blender.org"> Blender </a></p>
+      <p>Logiciel d'éditeur 3D</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="image/oracle.png" width="80" height="80"> 
+      <p class="w3-large"><a href="https://www.oracle.com"> Oracle </a></p>
+      <p>Hébergement du serveur </p>
+      <br><br><br>
+    </div>
+    <div class="w3-quarter">
+        <img src="image/reactjs.jpg" width="80" height="80"> 
+        <p class="w3-large"><a href="https://fr.reactjs.org"> ReactJS </a></p>
+        <p>Framework javascript utilisé </p>
+        <br><br><br>
+    </div>
+    <div class="w3-quarter">
+        <img src="image/café.jpg" width="80" height="80"> 
+        <p class="w3-large"><a href="https://www.maisonducafe.com/cafes"> Café </a></p>
+        <p>fidèle à notre Carburant </p>
+        <br><br><br>
+    </div>
+    <div class="w3-quarter">
+        <img src="image/trivago.png" width="110" height="80"> 
+        <p class="w3-large"><a href="https://www.trivago.fr"> Trivago </a></p>
+        <p> Hotel ? Trivago évidemment </p>
+        <br><br><br>
+      </div>
+    
+  </div>
+
+  <footer class="w3-center w3-black w3-padding-32">
+    <a href="rapport.html" class="w3-button w3-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </footer>
+
+</body>
